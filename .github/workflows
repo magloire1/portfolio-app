@@ -1,0 +1,5 @@
+porfolio/
+├── Dockerfile
+└── .github/
+    └── workflows/
+        └── ecr-build-push.yml
