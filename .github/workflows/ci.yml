@@ -1,18 +1,19 @@
-name: My first pipeline
+name: My 2nd pipeline
 
 on: push
-
 jobs:
     build:
         runs-on: ubuntu-latest
         steps:
             - name: uptime
-              run: uptime
-            - name: number of processor
-              run: nproc
+              run: echo "Uptime: $(uptime)"
+            - name: Number of processors
+              run: echo "Number of processors: $(nproc)"  
 
     test:
         runs-on: ubuntu-latest
         steps:
-            - name: Hello
-              run: echo Hello          
+            - name: hello world
+              run: echo "Hello world"          
+    
+    
