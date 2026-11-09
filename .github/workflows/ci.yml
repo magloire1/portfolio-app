@@ -6,9 +6,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: uptime
-              run: echo "Uptime: $(uptime)"
+              run: uptime
             - name: Number of processors
-              run: echo "Number of processors: $(nproc)"  
+              run: nproc  
 
     test:
         runs-on: ubuntu-latest
